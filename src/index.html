@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobra Cero</title>
     <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -14,6 +12,9 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -51,26 +52,140 @@
     </nav>
 
     <!-- MAIN -->
-    <main>
-      <section>
-        <h1>SOBRA CERO HN</h1>
-        <h2>La Primera App en Honduras que Cuida tus finanzas</h2>
-        <p>
+    <main class="container">
+      <section class="inicio">
+        <h1 class="title">SOBRA CERO HN</h1>
+        <h2 class="subTitle">
+          La Primera App en Honduras que Cuida tus finanzas
+        </h2>
+        <p class="description">
           Sobra Cero HN: Conectada con restaurantes, panaderías y negocios
           locales para ayudar a ahorrar. Registra tus gastos, analiza tus
           hábitos y descubre descuentos exclusivos para gestionar mejor tu
           dinero.
         </p>
-        <button>¡Empieza Ahora!</button>
+        <button class="btnStarted">¡Empieza Ahora!</button>
       </section>
+
+      <!-- registry -->
       <section>
-        <h2>Registra Tus Movimientos y Gasta en ahorrar</h2>
+        <h2 class="secondTitle">Registra Tus Movimientos y Gasta en ahorrar</h2>
+        <div class="registry">
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body registry-card">
+                  <h5 class="card-title">Registrar Ingreso</h5>
+                  <input class="input-registry" type="text" placeholder="Descripción (Ej: Salario)">
+                  <input class="input-registry" type="number" placeholder="Monto">
+                  <a href="#" class="btn btn-primary">Agregar Ingreso</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body registry-card">
+                  <h5 class="card-title">Registrar Gasto y Benefíciate en Locales</h5>
+                  <input class="input-registry" type="text" placeholder="Descripción (Ej: Comida)">
+                  <select class="input-registry" name="" id="">
+                    <option value="">Alimentación</option>
+                    <option value="">Restaurantes/Panaderias</option>
+                    <option value="">Transporte</option>
+                    <option value="">Entretenimiento</option>
+                    <option value="">Negocios Locales</option>
+                    <option value="">Otros</option>
+                  </select>
+                  <input class="input-registry" type="number" placeholder="Monto">
+                  <a href="#" class="btn btn-primary">Agregar Gasto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
       <section>
-        <h2>Tu Dashboard de Ahorro con Ventajas Locales</h2>
+        <h2 class="secondTitle">Tu Dashboard de Ahorro con Ventajas Locales</h2>
+        <div class="dashboard">
+          <div class="totals">
+            <div class="total">
+              <p>Total Ingresos</p>
+              <span>Lps 15.00</span>
+            </div>
+            <div class="total">
+              <p>Total Gastos</p>
+              <span>Lps 0.00</span>
+            </div>
+            <div class="total">
+              <p>Ahorro Neto + Descuentos Locales</p>
+              <span>Lps 15.00</span>
+            </div>
+          </div>
+          <div class="expenses">
+            <p>Gastos por Categoría (Incluye Revisión de Locales)</p>
+          </div>
+        </div>
       </section>
+
+      <!-- advices -->
       <section>
-        <h2>Consejos de Ahorro en Negocios Locales</h2>
+        <h2 class="secondTitle">Consejos de Ahorro en Negocios Locales</h2>
+        <div class="advices">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 

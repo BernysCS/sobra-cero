@@ -1,4 +1,113 @@
+
+/* General styles */
+.secondTitle {
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem 0 2.5rem 0;
+}
+
+/* Inicio */
 .logo-img {
   width: 60px;
   height: auto;
+}
+
+.inicio {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 31rem;
+}
+
+.title {
+  font-size: 100px;
+}
+
+.description {
+  width: 50%;
+  text-align: center;
+}
+
+.btnStarted  {
+  margin-top: 1rem;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.totals {
+  width: 80%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.total {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  width: 15rem;
+}
+
+.expenses {
+  text-align: center;
+  height: 15rem;
+  border: 1px solid black;
+  width: 80%;
+}
+
+/* advices */
+.advices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* registry */
+.registry-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-registry {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* footer */
+footer {
+  padding: 2.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+
+@media  (max-width: 768px) {
+  .inicio {
+    height: 25rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    width: 100%;
+  }
 }
