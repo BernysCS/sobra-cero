@@ -99,6 +99,7 @@ i {
 
 /* Dashboard */
 .dashboard-section {
+  border-radius: 5px;
   background-color: var(--dashboard-dark);
   margin-top: 20px;
   padding-bottom: 40px;
@@ -122,6 +123,9 @@ i {
 }
 
 .total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   color: var(--Slate-300);
   background-color: var(--dashboard-light);
